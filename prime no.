@@ -1,0 +1,27 @@
+#include <iostream>
+using namespace std;
+int main ()
+{
+    int num ,i;
+    
+    string number = "prime";
+    
+    cout<<"enter the number :";
+    cin>>num;
+    
+    for(i=2; i<num;i++)
+    {
+        if (num%i==0)
+        {
+             cout<<"it is a composite number";
+            number = "composite" ;
+       break;
+        }
+    }
+        if (number == "prime" )
+        {
+           cout<<"it is a  prime number";
+        }
+    
+return 0 ;
+}
